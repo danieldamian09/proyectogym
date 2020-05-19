@@ -19,12 +19,14 @@ body {
 /* header */
 
 header {
-    position: absolute;
+    position: fixed;
+     /*puede ser obsolute se queda el menu arriba  */
     left: 0;
     top: 0px;
     width: 100%;
     z-index: 10;
-    padding: 20px 15px;
+    padding: 15px 15px;
+    background-color: #000000;
 }
 
 header .container {
@@ -673,4 +675,291 @@ header .ham-burguer.active span:nth-child(2) {
     border: transparent;
 }
 
-tiempo 01:22
+/* galery secction */
+
+.gallery .content{
+    -webkit-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.gallery .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+/* para dar o quitar color cuando paso el mouse */
+
+.gallery .content .box img{
+    display: block;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); /*da color gris a toda la imagen */
+    -webkit-transition: all 5s ease;
+    transition: all .5s ease;
+}
+
+.gallery .content .box img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);  /*da color gris a toda la imagen */
+}
+
+/* para dar o quitar color cuando paso el mouse */
+
+.gallery h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+    text-align: center;
+}
+
+/* price section */
+
+.price-package{
+    padding: 80px 0px;
+    background-color: #ffffff;
+}
+
+.price-package h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+    text-align: center;
+}
+
+.price-package .title-p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    text-align: center;
+    padding: 0 20px 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.price-package .content{
+    -webkit-display: flex;
+    display: flex;
+}
+
+.price-package .content .box{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+
+.price-package .content .box .inner{
+    background-color: #f0f0f0;
+}
+
+.price-package .content .box .inner .price-tag{
+    padding: 15px;
+    font-size: 20px;
+    background-color: #c11325;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.price-package .content .box .inner .text {
+    padding: 30px 15px;
+    text-align: center;
+
+}
+
+.price-package .content .box .inner .text h3{
+    font-size: 24px;
+    color: #222222;
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: 700;
+}
+
+
+
+.price-package .content .box .inner .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    text-align: center;
+    padding: 0 0 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.price-package .content .box .inner .text .btn{
+    padding: 8px 30px;
+    margin-top: 10px;
+    background-color: #c11325;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.price-package .content .box .inner .btn:hover{
+    border: 1px solid #222222;
+    color: #222222;
+    background-color: transparent;
+}
+
+
+
+.price-package .content .box .inner .img img {
+    width: 100%;
+}
+
+/* contact section formulario */
+
+.contact{
+    padding: 80px 0px;
+    background-color: #222222;
+}
+
+.contact .content{
+    -webkit-display: flex;
+    display: flex;
+}
+
+.contact .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.contact .content .form input,
+.contact .content .form textarea{
+    height: 45px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+.contact .content .form input:focus,
+.contact .content .form textarea:focus{
+    outline: none;
+    border-color: #c11325;
+}
+
+
+
+.contact .content .form input::placeholder,
+.contact .content .form textarea::placeholder{
+    color: #ffffff;
+
+}
+
+.contact .content .form textarea{
+    height: 100px;
+}
+
+.contact .content .form button{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    height: 45px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    background-color: #c11325;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contact .content .form button:hover{
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+
+}
+
+.contact .content .text h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #c11325;
+    padding: 0px 0px 20px;
+
+}
+
+.contact .content .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact .content .text .info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.contact .content .text .info li{
+    display: block;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    padding-left: 40px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.contact .content .text .info li span{
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 20px;
+    color: #c11325;
+}
+
+.contact .content .text .social{
+    padding: 30px;
+}
+
+.contact .content .text .social a{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #c11325;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border: 1px solid transparent;
+}
+
+.contact .content .text .social a:hover{
+    background-color: transparent;
+    border-color: #ffffff ;
+}
+
+.contact .content .text .social a span{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.contact .content .text .copy{
+    color: #c5c5c5;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    font-size: 15px;
+}
